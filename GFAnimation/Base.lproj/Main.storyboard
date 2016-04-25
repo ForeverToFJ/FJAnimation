@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PIF-ax-zzc">
+                                <rect key="frame" x="84" y="108" width="431" height="384"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9P9-kG-d8W">
+                                <rect key="frame" x="285" y="562" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="Wt2-ZW-AIF"/>
+                                    <constraint firstAttribute="height" constant="30" id="tVK-PY-u2s"/>
+                                </constraints>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0HF-62-ZHs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftC-YH-Ake">
+                                <rect key="frame" x="283" y="524" width="32" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="bxi-sA-ki0"/>
+                                    <constraint firstAttribute="height" constant="30" id="t7R-fU-VwC"/>
+                                </constraints>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B4W-GX-1bJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PIF-ax-zzc" secondAttribute="trailing" constant="85" id="AZ6-t1-wuw"/>
+                            <constraint firstItem="ftC-YH-Ake" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QHV-MG-BHI"/>
+                            <constraint firstItem="9P9-kG-d8W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U2E-TD-yPN"/>
+                            <constraint firstItem="9P9-kG-d8W" firstAttribute="top" secondItem="ftC-YH-Ake" secondAttribute="bottom" constant="8" id="Y70-W8-CfI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PIF-ax-zzc" secondAttribute="bottom" constant="108" id="YB4-1P-Uc2"/>
+                            <constraint firstItem="PIF-ax-zzc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="88" id="csA-pJ-Rbl"/>
+                            <constraint firstItem="PIF-ax-zzc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="84" id="jwg-2W-zZq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9P9-kG-d8W" secondAttribute="bottom" constant="8" id="oU1-g8-6vP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="img" destination="PIF-ax-zzc" id="sVu-9i-yxY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="389"/>
+        </scene>
+    </scenes>
+</document>
